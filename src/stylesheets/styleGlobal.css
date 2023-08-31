@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*  {
+    box-sizing: border-box;
+}
+
+body {
+    background: hsla(304, 100%, 87%, 1);
+    background: linear-gradient(0deg, hsla(304, 100%, 87%, 1) 0%, hsla(324, 50%, 96%, 1) 45%);
+    background: -moz-linear-gradient(0deg, hsla(304, 100%, 87%, 1) 0%, hsla(324, 50%, 96%, 1) 45%);
+    background: -webkit-linear-gradient(0deg, hsla(304, 100%, 87%, 1) 0%, hsla(324, 50%, 96%, 1) 45%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFBDFB", endColorstr="#FAF0F6", GradientType=1 );
+    font-family: 'Montserrat';
+    min-height: 100vh;
+}
+
+.footer {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #1F1F1F;
+    width: 100%;
+    min-height: 8em;
+}
+
+.footer-title {
+    display: flex;
+    flex-flow: row nowrap;
+    color: #fff;
+}
+
+.footer-title-text {
+    margin-left: 1em;
+}
+
+.footer-description {
+    color: #BDB5B5;
+    font-size: 12px;
+    margin-left: 1em;
+}
+
