@@ -15,7 +15,6 @@ body {
 }
 
 .header {
-    position: absolute;
     right: 0;
     top: 0;
     background-color: #FC93C1;
@@ -31,7 +30,8 @@ body {
 }
 
 .main {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .left-couple-image {
@@ -43,7 +43,10 @@ body {
 
 .main-text {
     margin: auto;
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: 2;
+    
 }
 
 .right-couple-image {
@@ -55,7 +58,6 @@ body {
 .footer {
     display: flex;
     flex-flow: column;
-    position: absolute;
     left: 0;
     bottom: 0;
     background-color: #1F1F1F;
