@@ -46,7 +46,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-start: 2;
-    
+
 }
 
 .right-couple-image {
