@@ -12,6 +12,8 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFBDFB", endColorstr="#FAF0F6", GradientType=1 );
     font-family: 'Montserrat';
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
