@@ -35,5 +35,5 @@ Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](
 
 Esperamos que o Match In Christ seja uma plataforma que ajude a unir pessoas que compartilham sua fé e valores espirituais. Se você tiver alguma dúvida, sugestão ou feedback, não hesite em entrar em contato conosco.
 
-Website: [https://www.matchinchrist.com](https://www.matchinchrist.com)
+Website: [https://match-in-christ.vercel.app/](https://match-in-christ.vercel.app/)
 Email:  kauehenrick@proton.me
