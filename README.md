@@ -1,6 +1,6 @@
 # Match In Christ
 
-<div align="center">
+<div justify-content="center">
 ![Match In Christ Logo](/src/img/matchinChrist-logo1.png)
 </div>
 
