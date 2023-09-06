@@ -1,8 +1,6 @@
 # Match In Christ
 
-<div justify-content="center">
 ![Match In Christ Logo](/src/img/matchinChrist-logo1.png)
-</div>
 
 Match In Christ é uma plataforma de relacionamento online projetada para unir Cristãos de diversas religiões em busca de relacionamentos sérios e significativos. Nosso objetivo é criar um ambiente seguro e inclusivo onde os membros possam se conectar com pessoas que compartilham seus valores espirituais e crenças.
 
