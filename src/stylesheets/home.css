@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* import fonts */
+@font-face {
+    font-family: 'Milky Bar';
+    src: url('../fonts/MilkyBar-Normal.ttf') format('truetype');
+}
+
+/*styles from Menu/Header*/
+header {
+    /* padding: .5em; */
+}
+
+header .menu {
+    padding-top: .5em;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li a img {
+    width: 300px;
+}
+
+.menu ul .btnLogin {
+    border: 1px solid #000000;
+    padding: .3em 2em;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu ul li {
+    color: #000000;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.wrapperBg {
+    background-image: url(../img/couple-first-section.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+}
+/*End from menu styles*/
+
+.secPresentation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 95vh;
+    padding: 3em;
+    padding-left: 6em;
+}
+
+.secPresentation .content {
+    width: 50%;
+    max-width: 700px;
+}
+
+.secPresentation .content h1 {
+    font-family: 'PlayFair Display', sans-serif;
+    font-size: 5em;
+    line-height: 1.1em;
+
+}
+
+.secPresentation .content p {
+    width: 80%;
+    margin: 2em 0;
+    /* margin: 2em auto; */
+    /* line-height: .2em; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.content .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 100%;
+}
+
+.content .buttons a {
+    font-size: 1.280em;
+    padding: 1em 3em;
+    /* width: 50%; */
+    /* border-color: ; */
+    border: 1px solid #fc93c1;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content .buttons .btnSignUP {
+    background: linear-gradient(88deg, #FC93C1 51.75%, #FF2383 164.62%);
+    color: white;
+}
+
+.content .buttons .btnDepositions {
+    color: #FE68A9;
+}
+
+.secDepositions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 1em 2em 6em;
+    margin-top: 2em;
+}
+
+.secDepositions .someWords {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 40%;
+    /* padding-left: 6em; */
+}
+
+.secDepositions .depoiments {
+    width: 60%;
+    /* padding: 0 4em; */
+    padding-left: 4em;
+}
+
+.secDepositions .someWords .subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FD7CB4;
+}
+
+.secDepositions .someWords .words {
+    font-family: 'PlayFair Display', sans-serif;
+    font-size: 2rem;
+}
+
+.secDepositions .depoiments .card {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.depoiments {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.depoiments .card .couple {
+    background-image: url(../img/couple-for-card.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.depoiments .card .couple p {
+    padding: .5rem 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.depoiments .card .depoiment {
+    padding: .5rem 1rem 3.5rem 1rem;
+    font-weight: 400;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 3em;
+    background-color: #0E141A;
+    color: #ffffff;
+    padding: 2em;
+}
+
+footer img {
+    width: 80px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .principalLinks {
+    width: 70%;
+}
+
+footer .principalLinks ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-bottom: 1em;
+}
+footer .principalLinks p { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+footer .principalLinks ul li {
+    font-family: 'Milky Bar';
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
