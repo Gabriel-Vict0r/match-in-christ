@@ -166,6 +166,24 @@ a {
     gap: 3%;
 }
 
+.couple-2 {
+    background-image: url(../img/couple-for-card-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.depoiments .card .couple-2 p {
+    padding: .5rem 1rem;
+    color: white;
+    font-weight: 600;
+}
+
 .depoiments .card .couple {
     background-image: url(../img/couple-for-card.jpg);
     background-position: center;
