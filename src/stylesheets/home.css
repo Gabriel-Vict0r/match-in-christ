@@ -191,10 +191,23 @@ a {
 
 .secDepositions .someWords {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1em;
     max-width: 40%;
+    overflow: hidden;
     /* padding-left: 6em; */
+}
+
+.someWords>.slider-content {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+.someWords>.slider-content>.words {
+    flex: 0 0 auto;
+    width: 100%;
 }
 
 .someWords .carrousel {
@@ -203,20 +216,50 @@ a {
     gap: 1.3rem;
 }
 
-.someWords .carrousel .slide {
-    color: #ccc;
-    border: #ccc;
+.someWords .carrousel .container-radio>input:nth-child(1):checked~.slider-content {
+    transform: translateX(0%);
 }
-.someWords .carrousel .slide:checked { 
-    color: #FC93C1;
+
+.someWords>input:nth-child(2):checked~.slider-content {
+    transform: translateX(-100%);
 }
+
+.someWords>input:nth-child(3):checked~.slider-content {
+    transform: translateX(-200%);
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.container-radio {
+    display: flex;
+    align-items: center;
+}
+
+.container-radio .radio-btn {
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    border: none;
+    display: block;
+    background-color: #ccc;
+}
+
+.container-radio input[type='radio']:checked+.radio-btn {
+    background-color: #FE68A9;
+}
+
 .secDepositions .depoiments {
     width: 60%;
     /* padding: 0 4em; */
     padding-left: 4em;
 }
 
-.secDepositions .someWords .subtitle {
+.secDepositions .subtitle {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: 600;
