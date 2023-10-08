@@ -56,6 +56,11 @@ a {
     background-position: right;
     height: 100vh;
 }
+@media (max-width: 1194px) {
+    .wrapperBg { 
+        background-position-x: 150%;
+    }
+}
 /*End from menu styles*/
 
 .secPresentation {
@@ -64,11 +69,11 @@ a {
     justify-content: flex-start;
     height: 95vh;
     padding: 3em;
-    padding-left: 6em;
+    padding-left: calc(100vw - 96vw);
 }
 
 .secPresentation .content {
-    width: 50%;
+    width: 40%;
     max-width: 700px;
 }
 
@@ -97,7 +102,9 @@ a {
 
 .content .buttons a {
     font-size: 1.280em;
-    padding: 1em 3em;
+    padding: 1em 0;
+    width: 50%;
+    text-align: center;
     /* width: 50%; */
     /* border-color: ; */
     border: 1px solid #fc93c1;
