@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* import fonts */
 @font-face {
     font-family: 'Milky Bar';
@@ -17,6 +22,7 @@ header {
 header .menu {
     padding-top: .5em;
 }
+
 
 header .menu ul {
     list-style: none;
@@ -35,6 +41,12 @@ header .menu ul {
     border: 1px solid #000000;
     padding: .3em 2em;
     border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.menu ul .btnLogin:hover {
+    background: #000000;
+    color: white;
 }
 
 a {
@@ -47,7 +59,24 @@ a {
     font-family: 'Product Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    position: relative;
+}
+
+.menu ul .links::after {
+    content: '';
+    background: linear-gradient(88deg, #ff2382be 51.75%, #FC93C1 164.62%);
+    width: 0;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: all .2s ease-in-out;
+}
+
+.menu ul .links:hover::after {
+    width: 100%;
 }
 
 .wrapperBg {
@@ -56,11 +85,13 @@ a {
     background-position: right;
     height: 100vh;
 }
+
 @media (max-width: 1194px) {
-    .wrapperBg { 
+    .wrapperBg {
         background-position-x: 150%;
     }
 }
+
 /*End from menu styles*/
 
 .secPresentation {
@@ -119,7 +150,35 @@ a {
 
 .content .buttons .btnDepositions {
     color: #FE68A9;
+    transition: all .2s ease-in-out;
+    position: relative;
 }
+
+.content .buttons .btnDepositions::after {
+    border-radius: 10px;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.content .buttons .btnDepositions:hover::after {
+    background: linear-gradient(88deg, #FC93C1 51.75%, #FF2383 164.62%);
+    width: 100%;
+}
+
+.content .buttons .btnDepositions:hover {
+    color: white;
+}
+
+/* .content .buttons .btnDepositions:hover {
+    background: linear-gradient(88deg, #FC93C1 51.75%, #FF2383 164.62%);
+    color: white;
+} */
 
 .secDepositions {
     display: flex;
@@ -138,6 +197,19 @@ a {
     /* padding-left: 6em; */
 }
 
+.someWords .carrousel {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+}
+
+.someWords .carrousel .slide {
+    color: #ccc;
+    border: #ccc;
+}
+.someWords .carrousel .slide:checked { 
+    color: #FC93C1;
+}
 .secDepositions .depoiments {
     width: 60%;
     /* padding: 0 4em; */
@@ -245,7 +317,8 @@ footer .principalLinks ul {
     gap: 3em;
     margin-bottom: 1em;
 }
-footer .principalLinks p { 
+
+footer .principalLinks p {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
