@@ -73,3 +73,31 @@
     margin-left: .3em;
 }
 
+.match-card-back {
+    margin: 1.7em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 25em;
+    height: 40em;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.match-card-back .match-nav {
+    display: flex;
+    align-self: center;
+}
+
+.match-card-back .match-nav .nav-btn {
+    background-color: #fff;
+    color: #fff;
+    overflow: hidden;
+    margin: .6em;
+    min-width: 6em;
+    max-height: .5em;
+    border-radius: 7px;
+}
