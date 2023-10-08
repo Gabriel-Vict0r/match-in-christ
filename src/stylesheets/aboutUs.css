@@ -1,0 +1,60 @@
+main {
+    background-color: #fff;
+}
+
+.sobreNos {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.aboutUs-1 {
+    display: flex;
+    align-self: center;
+    margin: 2em 0;
+    width: 80%;
+    border: 1px solid black;
+    box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.aboutUs-1 .text-1 .text-first {
+    font-family: 'Milky Bar';
+    color: #000;
+    font-size: 1.2em;
+}
+
+.aboutUs-1 .text-1 {
+    font-family: 'Poppins';
+    color: #000;
+    margin-left: 1em;
+    width: 60%;
+    font-size: 17px;
+}
+
+.aboutUs-1 .couple-1 {
+    max-height: 400px;
+}
+
+.aboutUs-2 {
+    background-image: url(../img/wave-pink.svg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aboutUs-2 .text-2 .text-first {
+    font-family: 'Milky Bar';
+    color: #000;
+    font-size: 1.2em;
+}
+
+.aboutUs-2 .text-2 {
+    font-family: 'Poppins';
+    color: #000;
+    margin-right: 1em;
+    width: 50%;
+    font-size: 17px;
+}
+
+.aboutUs-2 .couple-2 {
+    max-height: 400px;
+}
