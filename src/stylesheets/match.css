@@ -1,3 +1,8 @@
+.match {
+    display: flex;
+    justify-content: center;
+}
+
 .match-card {
     background-image: url(../img/woman-1.jpg);
     background-repeat: no-repeat;
@@ -6,13 +11,40 @@
     margin: 1.7em;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
     border-radius: 10px;
     width: 25em;
     height: 40em;
 }
 
+.match-card .match-nav {
+    display: flex;
+    align-self: center;
+}
+
+.match-card .match-nav .nav-btn {
+    background-color: #fff;
+    color: #fff;
+    overflow: hidden;
+    margin: .6em;
+    min-width: 6em;
+    max-height: .5em;
+    border-radius: 7px;
+}
+
+.match-card .match-footer {
+    background: rgb(0, 0, 0, 0.4);
+    min-height: 125px;
+    filter: blur(5px);
+}
+
+.match-card .match-footer-text {
+    position: absolute;
+    bottom: 30px;
+}
+
 .match-card .match-id {
-    margin-left: 1.5em;
+    margin-left: 1.7em;
     display: flex;
     font-family: 'Milky Bar';
     color: #fff;
@@ -22,3 +54,22 @@
 .match-card .match-id .match-name {
     font-size: 2em;
 }
+
+.match-card .match-place {
+    margin-left: 1.2em;
+    display: flex;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.match-card .match-place .place-logo {
+    max-width: 30px;
+}
+
+.match-card .match-place .place-name {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-left: .3em;
+}
+
