@@ -15,19 +15,6 @@ body {
     min-height: 100vh;
 }
 
-header .menu {
-    padding-top: .5em;
-}
-
-header .menu ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 6em;
-    align-items: center;
-    justify-content: center;
-}
-
 .menu ul li a img {
     width: 250px;
     margin: auto;
@@ -50,6 +37,44 @@ a {
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 1.5em;
+}
+
+.form { 
+    width: 100%;
+    padding: 2em;
+}
+
+.formulario,
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 1em;
+}
+
+.formulario h3 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Milky Bar';
+    text-align: center;
+    font-weight: 500;
+}
+.formulario form input, .formulario form textarea { 
+    background: transparent;
+    outline: none;
+    border: 1px solid #575757;
+    border-radius: 5px;
+    padding: 1em;
+        font-size: 1.1em;
+}
+.btnEnviar { 
+    cursor: pointer;
+    background-color: #fc93c1 !important;
+    border: none !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
 }
 
 footer {

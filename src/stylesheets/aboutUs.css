@@ -10,14 +10,15 @@ main {
 .aboutUs-1 {
     display: flex;
     align-self: center;
-    margin: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 1em;
     width: 80%;
     border: 1px solid black;
-    box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    filter: drop-shadow(5px 5px 10px #000000);
 }
 
 .aboutUs-1 .text-1 .text-first {
-    font-family: 'Milky Bar';
+    font-family: 'PlayFair Display', sans-serif;
     color: #000;
     font-size: 1.2em;
 }
@@ -26,6 +27,7 @@ main {
     font-family: 'Poppins';
     color: #000;
     margin-left: 1em;
+    margin-top: 2em;
     width: 60%;
     font-size: 17px;
 }
@@ -42,7 +44,7 @@ main {
 }
 
 .aboutUs-2 .text-2 .text-first {
-    font-family: 'Milky Bar';
+    font-family: 'PlayFair Display', sans-serif;
     color: #000;
     font-size: 1.2em;
 }

@@ -9,6 +9,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../stylesheets/styleGlobal.css">
   <linK rel="stylesheet" href="../stylesheets/aboutUs.css">
+  <link rel="stylesheet" href="../stylesheets/header.css">
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +24,10 @@
         <li>
           <a href="/index.html"><img src="../img/logo-for-header.svg" alt="logo do menu" /></a>
         </li>
-        <li><a href="/index.html">Página Inicial</a></li>
-        <li><a href="./aboutUs.html">Sobre nós</a></li>
+        <li><a href="/index.html" class="links">Página Inicial</a></li>
+        <li><a href="./aboutUs.html" class="links">Sobre nós</a></li>
         <li><a href="./login.html" class="btnLogin">Entrar</a></li>
-        <li>pt-br</li>
+        <li class="links">pt-br</li>
       </ul>
     </nav>
   </header>
@@ -53,6 +54,17 @@
       <img class="couple-2" src="../img/couple-aboutus-2.png" alt="casal sobre nos 2">
     </section>
   </div>
+  <section class="form">
+    <div class="formulario">
+      <form action="">
+        <h3>Contate-te nos</h3>
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="email" name="email" placeholder="Email">
+        <textarea placeholder="Mensagem"></textarea>
+        <input type="submit" value="Enviar" class="btnEnviar">
+      </form>
+    </div>
+  </section>
   <footer>
     <div class="principalLinks">
       <ul>
@@ -61,7 +73,10 @@
         <li><a href="./aboutUs.html">sobre nós</a></li>
       </ul>
       <p>Match in Christ - Encontre o Amor na Fé <br>
-        © 2023 Match in Christ. Todos os direitos reservados.</p>
+        © 2023 Match in Christ. Todos os direitos reservados.<br>
+        <span style="color:#fc93c1">kauehenrick@proton.me</span><br>
+        <span style="color:#fc93c1">victorgabriel1730@gmail.com</span>
+      </p>
     </div>
     <img src="../img/logo-for-footer.svg" alt="icone do app">
   </footer>
