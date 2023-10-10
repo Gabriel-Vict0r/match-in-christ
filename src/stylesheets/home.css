@@ -210,29 +210,17 @@ a {
     width: 100%;
 }
 
-.someWords .carrousel {
+.carrousel {
     display: flex;
     flex-direction: row;
     gap: 1.3rem;
 }
 
-.someWords .carrousel .container-radio>input:nth-child(1):checked~.slider-content {
-    transform: translateX(0%);
-}
-
-.someWords>input:nth-child(2):checked~.slider-content {
-    transform: translateX(-100%);
-}
-
-.someWords>input:nth-child(3):checked~.slider-content {
-    transform: translateX(-200%);
-}
 
 .slide {
     position: absolute;
     opacity: 0;
-    height: 0;
-    width: 0;
+    cursor: pointer;
 }
 
 .container-radio {
@@ -247,16 +235,40 @@ a {
     border: none;
     display: block;
     background-color: #ccc;
+    cursor: pointer;
 }
 
 .container-radio input[type='radio']:checked+.radio-btn {
     background-color: #FE68A9;
 }
 
+/* .container-radio>input:nth-child(1):checked~.someWords .slider-content {
+    transform: translateX(0%);
+} */
+.carrousel>input[type='radio']:nth-child(2):checked~.someWords .slider-content {
+    transform: translateX(-100%);
+    transform: scale(0.1);
+}
+
+/* .container-radio>input:nth-child(3):checked~.someWords .slider-content {
+    transform: translateX(-200%);
+} */
+
 .secDepositions .depoiments {
-    width: 60%;
+    /* width: 70%;
+    /* padding: 0 4em;
+    display: flex;
+    padding-left: 4em; */
+    width: 70%;
+    overflow: hidden;
+}
+
+.secDepositions .depoiments .slides {
+    width: 100%;
     /* padding: 0 4em; */
+    display: flex;
     padding-left: 4em;
+    transition: all 300ms ease-out;
 }
 
 .secDepositions .subtitle {
@@ -274,15 +286,16 @@ a {
 
 .secDepositions .depoiments .card {
     width: 100%;
+    min-width: calc(27vw - 15px);
     background-color: #ffffff;
     border-radius: 10px;
-    background: var(--white, #FFF);
     box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
-.depoiments {
+.depoiments .slides {
     display: flex;
     flex-direction: row;
     gap: 3%;
@@ -300,13 +313,13 @@ a {
     border-radius: 10px 10px 0px 0px;
 }
 
-.depoiments .card .couple-2 p {
+.depoiments .slides .card .couple-2 p {
     padding: .5rem 1rem;
     color: white;
     font-weight: 600;
 }
 
-.depoiments .card .couple {
+.depoiments .slides .card .couple {
     background-image: url(../img/couple-for-card.jpg);
     background-position: center;
     background-size: cover;
@@ -327,6 +340,25 @@ a {
 .depoiments .card .depoiment {
     padding: .5rem 1rem 3.5rem 1rem;
     font-weight: 400;
+}
+
+#slidethumb {
+    width: 25%;
+    height: 8px;
+    background: #777;
+    border-radius: 20px;
+    display: block;
+    transition: all 300ms ease-out;
+}
+
+#slidebar {
+    display: block;
+    position: relative;
+    width: 120px;
+    margin: 20px auto;
+    background: #fff;
+    height: 8px;
+    border-radius: 20px;
 }
 
 footer {
