@@ -15,82 +15,8 @@ html {
 }
 
 /*styles from Menu/Header*/
-header {
-    /* padding: .5em; */
-}
-
-header .menu {
-    padding-top: .5em;
-}
 
 
-header .menu ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 6em;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu ul li a img {
-    width: 300px;
-}
-
-.menu ul .btnLogin {
-    border: 1px solid #000000;
-    padding: .3em 2em;
-    border-radius: 10px;
-    transition: all .2s ease-in-out;
-}
-
-.menu ul .btnLogin:hover {
-    background: #000000;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.menu ul li {
-    color: #000000;
-    font-family: 'Product Sans', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 1.4em;
-    position: relative;
-}
-
-.menu ul .links::after {
-    content: '';
-    background: linear-gradient(88deg, #ff2382be 51.75%, #FC93C1 164.62%);
-    width: 0;
-    height: 4px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    transition: all .2s ease-in-out;
-}
-
-.menu ul .links:hover::after {
-    width: 100%;
-}
-
-.wrapperBg {
-    background-image: url(../img/couple-first-section.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 100vh;
-}
-
-@media (max-width: 1194px) {
-    .wrapperBg {
-        background-position-x: 150%;
-    }
-}
 
 /*End from menu styles*/
 
@@ -191,29 +117,19 @@ a {
 
 .secDepositions .someWords {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 1em;
-    max-width: 40%;
+    max-width: 80%;
     overflow: hidden;
     /* padding-left: 6em; */
 }
 
 .someWords>.slider-content {
-    display: flex;
-    flex-wrap: nowrap;
     width: 100%;
-    transition: all 500ms ease-in-out;
 }
 
 .someWords>.slider-content>.words {
-    flex: 0 0 auto;
     width: 100%;
-}
-
-.carrousel {
-    display: flex;
-    flex-direction: row;
-    gap: 1.3rem;
 }
 
 
@@ -301,17 +217,7 @@ a {
     gap: 3%;
 }
 
-.couple-2 {
-    background-image: url(../img/couple-for-card-2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 300px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    border-radius: 10px 10px 0px 0px;
-}
+
 
 .depoiments .slides .card .couple-2 p {
     padding: .5rem 1rem;
@@ -320,7 +226,6 @@ a {
 }
 
 .depoiments .slides .card .couple {
-    background-image: url(../img/couple-for-card.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -329,6 +234,23 @@ a {
     align-items: flex-end;
     justify-content: flex-start;
     border-radius: 10px 10px 0px 0px;
+}
+
+.depoiments .slides .card .first {
+    background-image: url(../img/couple-for-card.jpg);
+}
+
+.depoiments .slides .card .second {
+    background-image: url(../img/couple-for-card-2.jpg);
+
+}
+
+.depoiments .slides .card .tird {
+    background-image: url(../img/couple-3.jpg);
+}
+
+.depoiments .slides .card .four {
+    background-image: url(../img/couple-four.jpg);
 }
 
 .depoiments .card .couple p {
@@ -340,6 +262,11 @@ a {
 .depoiments .card .depoiment {
     padding: .5rem 1rem 3.5rem 1rem;
     font-weight: 400;
+    user-select: none;
+}
+
+.card p {
+    user-select: none;
 }
 
 #slidethumb {
@@ -365,6 +292,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     gap: 3em;
     background-color: #0E141A;
@@ -403,4 +331,42 @@ footer .principalLinks ul li {
     font-size: 2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.form { 
+    width: 100%;
+    padding: 2em;
+}
+
+.formulario,
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 1em;
+}
+
+.formulario h3 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Milky Bar';
+    text-align: center;
+    font-weight: 500;
+}
+.formulario form input, .formulario form textarea { 
+    background: transparent;
+    outline: none;
+    border: 1px solid #575757;
+    border-radius: 5px;
+    padding: 1em;
+        font-size: 1.1em;
+}
+.btnEnviar { 
+    cursor: pointer;
+    background-color: #fc93c1 !important;
+    border: none !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
 }

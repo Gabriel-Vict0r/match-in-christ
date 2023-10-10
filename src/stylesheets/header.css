@@ -1,0 +1,72 @@
+header .menu {
+    padding-top: .5em;
+}
+
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li a img {
+    width: 300px;
+}
+
+.menu ul .btnLogin {
+    border: 1px solid #000000;
+    padding: .3em 2em;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.menu ul .btnLogin:hover {
+    background: #000000;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu ul li {
+    color: #000000;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    position: relative;
+}
+
+.menu ul .links::after {
+    content: '';
+    background: linear-gradient(88deg, #ff2382be 51.75%, #FC93C1 164.62%);
+    width: 0;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: all .2s ease-in-out;
+}
+
+.menu ul .links:hover::after {
+    width: 100%;
+}
+
+.wrapperBg {
+    background-image: url(../img/couple-first-section.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+}
+
+@media (max-width: 1194px) {
+    .wrapperBg {
+        background-position-x: 150%;
+    }
+}

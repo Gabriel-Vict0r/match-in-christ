@@ -9,6 +9,8 @@
   <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico">
   <!-- ---------CSS -------------------->
   <link rel="stylesheet" href="./src/stylesheets/home.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/stylesheets/header.css">
   <!-- --------FONTS----------------- -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +26,7 @@
       <nav class="menu">
         <ul>
           <li>
-            <a href="index.html"><img src="./src/img/logo-for-header.svg" alt="logo do menu" /></a>
+            <a href="/index.html"><img src="./src/img/logo-for-header.svg" alt="logo do menu" /></a>
           </li>
           <li><a href="./index.html" class="links">Página Inicial</a></li>
           <li><a href="./src/views/aboutUs.html" class="links">Sobre nós</a></li>
@@ -43,98 +45,84 @@
           </p>
           <div class="buttons">
             <a href="./src/views/signUp.html" class="btnSignUP">Criar uma conta</a>
-            <a href="./src/views/match.html" class="btnDepositions">Match!</a>
+            <a href="#depoimentos" class="btnDepositions">Depoimentos</a>
           </div>
         </div>
       </section>
   </div>
   <section class="secDepositions">
     <div>
-      <h2 class="subtitle" id="depoimentos">depoimentos</h2>
-      <div class="carrousel">
-        <div class="container-radio">
-          <input type="radio" name="btn" class="slide">
-          <div class="radio-btn"></div>
-        </div>
-        <div class="container-radio">
-          <input type="radio" name="btn" class="slide">
-          <div class="radio-btn"></div>
-        </div>
-        <div class="container-radio">
-          <input type="radio" name="btn" class="slide">
-          <div class="radio-btn"></div>
-        </div>
-      </div>
+  <h2 class="subtitle" id="depoimentos">depoimentos</h2>
       <div class="someWords">
-        <div class="slider-content">
-          <h3 class="words">
-            Palavras que inspiram,<br> histórias que tocam corações
-          </h3>
-          <h3 class="words">
-            teste2
-          </h3>
-          <h3 class="words">
-            teste3
-          </h3>
-        </div>
+      <div class="slider-content">
+      <h3 class="words">
+        Palavras que inspiram,<br> histórias que tocam corações
+      </h3>
       </div>
     </div>
+    </div>
     <div class="depoiments">
-      <div class="slides">
-        <div class="card" draggable="false">
-          <div class="couple" draggable="false">
-            <p>Mônica e Lucas</p>
-          </div>
-          <div class="depoiment">
-            Nosso amor aumentava a cada dia... Finalmente, nós nos casamos em
-            junho deste ano!
-          </div>
+      <div class="slides" id="slides">
+      <div class="card" draggable="false">
+        <div class="couple first" draggable="false">
+          <p>Mônica e Lucas</p>
         </div>
-        <div class="card" draggable="false">
-          <div class="couple-2" draggable="false">
-            <p>Arthur e Lissandra</p>
-          </div>
-          <div class="depoiment">
-            Nossa jornada começou com sorrisos tímidos, cresceu com momentos inesquecíveis e se fortaleceu com
-            superações.
-          </div>
-        </div>
-        <div class="card" draggable="false">
-          <div class="couple-2" draggable="false">
-            <p>Arthur e Lissandra</p>
-          </div>
-          <div class="depoiment">
-            Nossa jornada começou com sorrisos tímidos, cresceu com momentos inesquecíveis e se fortaleceu com
-            superações.
-          </div>
-        </div>
-        <div class="card" draggable="false">
-          <div class="couple-2" draggable="false">
-            <p>Arthur e Lissandra</p>
-          </div>
-          <div class="depoiment">
-            Nossa jornada começou com sorrisos tímidos, cresceu com momentos inesquecíveis e se fortaleceu com
-            superações.
-          </div>
-        </div>
-        <div class="card" draggable="false">
-          <div class="couple-2" draggable="false">
-            <p>Arthur e Lissandra</p>
-          </div>
-          <div class="depoiment">
-            Nossa jornada começou com sorrisos tímidos, cresceu com momentos inesquecíveis e se fortaleceu com
-            superações.
-          </div>
+        <div class="depoiment">
+          Nosso amor aumentava a cada dia... Finalmente, nós nos casamos em
+          junho deste ano!
         </div>
       </div>
-      <div id="slidebar"><span id="slidethumb"></span>
+      <div class="card" draggable="false">
+        <div class="couple second"draggable="false">
+          <p>Arthur e Lissandra</p>
+        </div>
+        <div class="depoiment">
+          Nossa jornada começou com sorrisos tímidos, cresceu com momentos inesquecíveis e se fortaleceu com superações.
+        </div>
       </div>
+      <div class="card" draggable="false">
+        <div class="couple tird"draggable="false">
+          <p>Mathias e Joana</p>
+        </div>
+        <div class="depoiment">
+Nosso amor começou com um deslize para a direita, e desde então, estamos escrevendo nossa história juntos.        </div>
+      </div>
+      <div class="card" draggable="false">
+        <div class="couple four"draggable="false">
+          <p>Paulo e Cristina</p>
+        </div>
+        <div class="depoiment">
+O aplicativo de namoro nos aproximou, mas o destino nos uniu de verdade.
+        </div>
+      </div>
+      <div class="card" draggable="false">
+        <div class="couple five"draggable="false">
+          <p>Marcelo e Ana Carolina</p>
+        </div>
+        <div class="depoiment">
+Quando nossos perfis combinaram, soubemos que encontramos algo especial - um ao outro.        </div>
+      </div>
+    </div>
+    <div id="slidebar"><span id="slidethumb"></span>
+    </div>
+  </section>
+  <section class="form">
+    <div class="formulario">
+<form action="
+    ">
+    <h3>Contate-te nos</h3>
+    <input type="text" name="nome" placeholder="Nome">
+    <input type="email" name="email" placeholder="Email">
+    <textarea placeholder="Mensagem"></textarea>
+    <input type="submit" value="Enviar" class="btnEnviar">
+  </form>
+    </div>
   </section>
   <footer>
     <div class="principalLinks">
       <ul>
-        <li><a href="">acessibilidade</a></li>
-        <li><a href="">termos e condições</a></li>
+        <li><a href="#">acessibilidade</a></li>
+        <li><a href="#">termos e condições</a></li>
         <li><a href="./src/views/aboutUs.html">sobre nós</a></li>
       </ul>
       <p>Match in Christ - Encontre o Amor na Fé <br>
@@ -143,7 +131,7 @@
     <img src="./src/img/logo-for-footer.svg" alt="icone do app">
   </footer>
   </main>
-  <script src="./src/js/index.js" defer></script>
+      <script src="./src/js/index.js" defer></script>
 
 </body>
 
